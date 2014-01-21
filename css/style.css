@@ -1,0 +1,182 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font: 1.1em/1.62 sans-serif;
+	color: #3a3a3a;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Sintony', sans-serif;
+	color: #2980B9;
+}
+
+h1 {
+	display: inline;
+	color: #fff;
+}
+
+h2, h3 {
+	margin-bottom: -5px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 5px;
+}
+
+h3 {
+	border: none;
+}
+
+header {
+	background-color: #3C5269;
+	overflow: hidden;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding: 0 15px;
+}
+
+#root {
+	max-width: 960px;
+	min-height: 100%;
+	margin: 0 auto;
+	box-shadow: 5px 0 10px #ccc, -5px 0 10px #ccc;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	background-color: #EEE;
+	padding: 0 15px;
+}
+
+.main-nav ul {
+	padding-left: 0;
+}
+
+.main-nav li {
+	display: inline;
+	background-color: #2B3C4E;
+	border-radius: 8px;
+	padding: .6em .8em;
+	margin-top: 1px;
+}
+
+.main-nav li a, 
+.main-nav li a:visited, 
+.main-nav li a:hover {
+	color: rgba(255,255,255, .8);
+	text-decoration: none;
+}
+
+.content {
+	max-width: 960px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.content a, .content a:visited, .content a:hover {
+	color: #2980B9;
+	text-decoration: none;
+}
+
+.content p {
+	width: 75%;
+	float: left;
+}
+
+.content img {
+	width: 20%;
+	margin-left: 30px;	
+}
+
+.content .maps {
+	width: 40%;
+	margin-left: 10px;
+}
+
+.contact p {
+	width: 55%;
+}
+
+.infobox {
+	width: 28.3%;
+	height: auto;
+	background-color: #2980B9;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 3%;
+	margin-bottom: 20px;
+	padding: 1%;
+	float: left;
+	font-size: 90%;
+
+}
+
+.infobox a, .infobox a:visited, .infobox a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.infobox li {
+	list-style-type: none;
+}
+
+.infobox ul {
+	padding-left: 0;
+}
+
+.services, .services li {
+	word-wrap: break-word;
+}
+
+
+.main-footer {
+	background-color: #DDE0E2;
+	padding: 2%;
+	border-radius: 5px;
+	clear: both;
+	font-size: 0.6rem;
+}
+
+.main-footer a, .main-footer a:visited, .main-footer a:hover {
+	color: #3a3a3a;
+	font-weight: bold;
+}
+
+.valign {
+  position: relative;
+  top: 50%;
+}
+
+/* Smartphone */
+
+@media not screen and (min-width: 768px) {
+	.main-nav li {
+		display: block;
+	}
+	
+	.infobox {
+		width: 95%;
+	}
+	
+	.content img {
+		width: auto;
+		padding: 0 5px;
+		margin: 0 auto;
+	}
+	
+	.content p {
+		width: 95%;
+	}
+	
+	.content .maps {
+		width: 95%;
+	}
+}
