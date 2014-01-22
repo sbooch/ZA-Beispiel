@@ -78,8 +78,8 @@ input[type="textarea"] {
 	min-height: 100%;
 	margin: 0 auto;
 	box-shadow: 5px 0 10px #468DCB, -5px 0 10px #468DCB;
-	border-left: 1px solid #aaa;
-	border-right: 1px solid #aaa;
+	border-left: 1px solid #468DCB;
+	border-right: 1px solid #468DCB;
 	background-color: #EEE;
 	padding: 0 15px;
 }
