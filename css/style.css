@@ -13,6 +13,7 @@ html, body {
 	height: 100%;
 	font: 1.1em/1.62 sans-serif;
 	color: #3a3a3a;
+	background: url('../img/Background.jpg') top left 100% no-repeat;
 }
 
 h1,
@@ -45,11 +46,38 @@ header {
 	padding: 0 15px;
 }
 
+input {
+	width: 800px;
+	height: 30px;
+	margin-bottom: 10px;
+	display: block;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+input[type=submit] {
+	background-color: #2980B9;
+	color: #fff;
+	font-weight: bold;
+	font-size: 120%;
+	margin: 25px 0;
+	border-radius: 5px;
+	padding: 10px;
+	height: 50px;
+	width: 175px;
+}
+
+input[type="textarea"] {
+	height: 120px;
+}
+
+
 #root {
 	max-width: 960px;
 	min-height: 100%;
 	margin: 0 auto;
-	box-shadow: 5px 0 10px #ccc, -5px 0 10px #ccc;
+	box-shadow: 5px 0 10px #468DCB, -5px 0 10px #468DCB;
 	border-left: 1px solid #aaa;
 	border-right: 1px solid #aaa;
 	background-color: #EEE;
@@ -93,16 +121,12 @@ header {
 
 .content img {
 	width: 20%;
-	margin-left: 30px;	
+	margin-left: 30px;
+	border-radius: 15px;	
 }
 
-.content .maps {
-	width: 40%;
-	margin-left: 10px;
-}
-
-.contact p {
-	width: 55%;
+.content form {
+	width: 80%;
 }
 
 .infobox {
@@ -158,12 +182,15 @@ header {
 /* Smartphone */
 
 @media not screen and (min-width: 768px) {
+	html, body {
+		background: none;
+	}
 	.main-nav li {
 		display: block;
 	}
 	
 	.infobox {
-		width: 95%;
+		width: 98%;
 	}
 	
 	.content img {
@@ -176,7 +203,11 @@ header {
 		width: 95%;
 	}
 	
-	.content .maps {
-		width: 95%;
+	.content input {
+		width: 276px;
+	}
+	
+	.content input[type="submit"] {
+		width: 285px;
 	}
 }
