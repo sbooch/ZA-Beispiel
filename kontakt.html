@@ -6,6 +6,12 @@
 	<title>Zahnarzt Dr. Mustermann in Biberach</title>
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sintony:700">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<style type="text/css">
+		input[type="submit"] {
+			margin-top: 120px;
+		}
+	</style>
 </head>
 <body>
 	<div id="root">
@@ -23,12 +29,12 @@
 		
 		<div class="content valign">
 			<h2>So erreichen Sie uns</h2>
-			<h3>Schreiben Sie uns direkt</h3>
+			<h3>Reservieren Sie direkt einen Termin</h3>
 			<form method="post" action"/">
 				<input name="name" placeholder="Ihr Name" type="text">
-				<input name="subject" placeholder="Betreff" type="text">
-				<input name="comment" placeholder="Ihre Nachricht" type="textarea">
-				<input value="Absenden" type="submit">
+				<input name="subject" value="Terminvereinbarung" type="text">
+				<input name="date" placeholder="Ihre Nachricht" type="datetime-local">
+				<input value="Termin reservieren" type="submit">
 			</form>
 		</div>
 		
